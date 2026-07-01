@@ -10,7 +10,7 @@ jobs:
         run: echo "we are creating the build project"
   
   test:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Test project
         run: echo "this is the test project"
