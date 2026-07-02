@@ -1,0 +1,17 @@
+name: Event filters
+on: 
+  push:
+    branches:
+      - main
+    paths:
+      - "**.html"
+  pull_request:
+    branches:
+      - main
+jobs:
+  event-trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: changing .html file
+        run: echo "this is the event filter workflow"
+        
